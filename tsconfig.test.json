@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "bundler",
+    "noEmit": false,
+    "outDir": "dist-test",
+    "resolveJsonModule": true,
+    "rootDir": ".",
+    "types": [
+      "node"
+    ]
+  },
+  "extends": "./tsconfig.json",
+  "include": [
+    "src/lib/types.ts",
+    "src/lib/money.ts",
+    "src/lib/normalize.ts",
+    "src/lib/api.ts",
+    "src/lib/store.ts",
+    "src/lib/totals.ts",
+    "tests/**/*.ts",
+    "scripts/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist-test"
+  ]
+}
